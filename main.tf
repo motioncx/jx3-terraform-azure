@@ -1,5 +1,5 @@
 module "cluster" {
-  source                               = "git@github.com:motioncx/jx3-terraform-azure.git"
+  source                               =  "github.com/jenkins-x-terraform/terraform-jx-azure?ref=v0.1.0"
   apex_domain_integration_enabled      = var.apex_domain_integration_enabled
   apex_domain                          = var.apex_domain
   subdomain                            = var.subdomain
@@ -11,8 +11,8 @@ module "cluster" {
   cluster_resource_group_name          = var.cluster_resource_group_name
   cluster_version                      = var.cluster_version
   enable_log_analytics                 = var.enable_log_analytics
-  jx_bot_token                         = var.jx_bot_token
-  jx_git_url                           = var.jx_git_url
+  jx_bot_token                         = "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"
+  jx_git_url                           = "https://github.com/motioncx/jx3-terraform-azure"
   jx_bot_username                      = var.jx_bot_username
   key_vault_enabled                    = var.key_vault_enabled
   key_vault_name                       = var.key_vault_name
